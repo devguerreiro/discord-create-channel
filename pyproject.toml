@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "channel-bot"
+version = "0.1.0"
+description = ""
+authors = ["Luis Guerreiro <luiscvlh11@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+"discord.py" = "^1.7.3"
+fastapi = "^0.78.0"
+uvicorn = {extras = ["stanndard"], version = "^0.18.2"}
+python-dotenv = "^0.20.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+black = "^22.6.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
